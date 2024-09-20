@@ -135,13 +135,16 @@ a{
 
 .containerVideo{
      background-color: #60b7d6a6;
-     text-align: center;
      margin-bottom: 40px;
      padding: 20px 10px;
      border-radius: 8px;
      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
+.containerVideo iframe{
+     display: block;
+     max-width: 100%;
+     margin: auto;
+}
 
 .curiosities-header{
      border-radius: 8px 8px 0 0;
@@ -165,7 +168,7 @@ a{
      columns: 2;
      list-style: none;
      list-style-type: '\2714\000A0';
-     margin: 12px 10px;
+     margin: 12px 20px;
 }
 
 .footer{
