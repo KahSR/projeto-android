@@ -1,0 +1,179 @@
+*{margin:0px;padding: 0px;box-sizing: border-box;}
+
+:root{
+     --base-font:"Poppins", sans-serif;
+     --main-title-font: "Share Tech", sans-serif;
+
+     --body-color: #F2F0F2;
+     --primary-text-color: #242424;
+
+     --secondary-bg-main-color: #242424;
+     --secondary-bg-color: #60B7D6;
+     --secondary-text-color: #F2F0F2;
+
+     --text-indent: 18px;
+     --text-line-height: 2.8rem;
+
+     --fz-main: 1.6rem;
+}
+@font-face {
+     font-family: 'idroid';
+     src: url('fontes/idroid.otf') format('opentype');
+}
+html{
+     font-size: 62.5%;
+}
+body{
+     min-height: 100vh;
+     font-family: var(--base-font);
+     font-size: var(--fz-main);
+     font-weight: 300;
+     font-style: normal;
+     background-color: var(--body-color);
+}
+
+h1{
+     font-size: 3.8rem;
+     font-family: var(--main-title-font);
+}
+h2{
+     font-family: 'idroid';
+     font-size: 2.5rem;
+     color: var(--primary-text-color);
+}
+p{
+     line-height: var(--text-line-height);
+}
+picture, img{
+     display: block;
+}
+img{
+     max-width: 100%;
+}
+header, footer{
+     background-color: var(--secondary-bg-main-color);
+}
+h2, a{
+     color: var(--primary-text-color);
+}
+a{
+     font-weight: 600;
+}
+.inline-block{
+     display: inline-block;
+}
+.indent{
+     text-indent: var(--text-indent)
+}
+
+.link{
+     font-weight: 600;
+}
+
+.Header{
+     padding: 12px 10px;
+     text-align: center;
+}
+.Header-title{
+     text-transform: uppercase;
+     color: #60B7D6;
+}
+.Header-intro{
+     color: var(--secondary-text-color);
+     max-width: 40%;
+     min-width:400px;
+     margin:12px auto 18px;
+     font-size: 1.4rem;
+}
+
+.Nav{
+     text-align: right;
+}
+.Nav-link{
+     font-weight: 600;
+     font-size: 1.5rem;
+     text-decoration: none;
+     color: var(--secondary-text-color);
+     padding: 5px 8px;
+     display: block; 
+     position: relative;
+}
+.Nav-link + .Nav-link{
+     margin-right: 25px;
+}
+.Nav ul li + li{
+     margin-left: 20px;
+}
+.Nav-link::before{
+     content: '';
+     position: absolute;
+     height: 3px;
+     width: 0%;
+     background-color:  #60B7D6;
+     left: 0px;
+     bottom: 0px;
+     transition: .3s;
+}
+.Nav-link:hover::before{
+     width: 100%;
+}
+
+.container{
+     max-width: 900px;
+     margin: auto;
+     padding: 60px 12px;
+}
+.content{
+     margin-bottom: 40px;
+}
+.content-subtitle{
+     margin-bottom: 12px;
+}
+.content-img{
+     margin:20px auto;
+}
+
+.containerVideo{
+     background-color: #60b7d6a6;
+     text-align: center;
+     margin-bottom: 40px;
+     padding: 20px 10px;
+     border-radius: 8px;
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.curiosities-header{
+     border-radius: 8px 8px 0 0;
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     background-color: var(--secondary-bg-color);
+     padding:5px 12px;
+}
+.curiosities-subtitle{
+     font-size: 1.7rem;
+}
+.curiosities-content{
+     background-color: #60b7d6a6;
+     border-radius: 0 0 8px 8px;
+     padding: 10px 12px;
+     margin-bottom: 12px;
+}
+.curiosities-text{
+     font-size: 1.5rem;
+}
+.curiosities-list{
+     columns: 2;
+     list-style: none;
+     list-style-type: '\2714\000A0';
+     margin: 12px 10px;
+}
+
+.footer{
+     text-align: center;
+     padding: 20px 10px;
+     color: #fff;
+     font-weight: 600;
+}
+.footer a{
+     color: #60B7D6;
+}
